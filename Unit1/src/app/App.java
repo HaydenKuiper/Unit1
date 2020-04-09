@@ -1,15 +1,23 @@
 package app;
-
-import sun.awt.AWTAccessor.SystemColorAccessor;
-
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("1. Polar Express");
-        System.out.println("2. lord of the rings triology");
-        System.out.println("3. Dead Pool");
-        System.out.println("4. the MCU");
-        System.out.println("5. Stand By Me");
+    char FirstletterOfMyName = 'H';
+    short TheAmountOfPeopleThatLiveInTown = 860;
+    int TheAmountOfXboxesInTheWorld = 78000000;
+    long TheAmountOfPeopleInTheWorld = 75000000000000L;
+    float HowlongIsASnake = 3.5F;
+    double HowlongIsAElephent = 7.6666D; 
+    boolean livesInAlbertville = false;
+    byte TheLengthOfACatipplar = 50;
 
-    
-    
+    System.out.println(TheLengthOfACatipplar);
+    System.out.println("do i live in Albertville?");
+    System.out.println(livesInAlbertville);
+    System.out.println(FirstletterOfMyName);
+    System.out.println(TheAmountOfPeopleThatLiveInTown);
+    System.out.println(TheAmountOfXboxesInTheWorld);
+    System.out.println(TheAmountOfPeopleInTheWorld);
+    System.out.println(HowlongIsASnake);
+    System.out.println(HowlongIsAElephent);
+    }
 }
