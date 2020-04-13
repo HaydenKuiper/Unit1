@@ -1,23 +1,24 @@
 package app;
 public class App {
     public static void main(String[] args) throws Exception {
-    char FirstletterOfMyName = 'H';
-    short TheAmountOfPeopleThatLiveInTown = 860;
-    int TheAmountOfXboxesInTheWorld = 78000000;
-    long TheAmountOfPeopleInTheWorld = 75000000000000L;
-    float HowlongIsASnake = 3.5F;
-    double HowlongIsAElephent = 7.6666D; 
-    boolean livesInAlbertville = false;
-    byte TheLengthOfACatipplar = 50;
+        String Person1 = "Hayden";
+        String Verb1 = "code";
+        String Adjective1 = "eggs";
+        String Verb2 = "bacon";
+        String Place1 = "home";
+        String Person2= "John";
+        String Adjective2 = "Super";
+        String Place2 = "market";
+        String Verb3 = "chill";
 
-    System.out.println(TheLengthOfACatipplar);
-    System.out.println("do i live in Albertville?");
-    System.out.println(livesInAlbertville);
-    System.out.println(FirstletterOfMyName);
-    System.out.println(TheAmountOfPeopleThatLiveInTown);
-    System.out.println(TheAmountOfXboxesInTheWorld);
-    System.out.println(TheAmountOfPeopleInTheWorld);
-    System.out.println(HowlongIsASnake);
-    System.out.println(HowlongIsAElephent);
+        System.out.println(Person1 + " " + "is a programer who likes to" + " " + Verb1);
+        System.out.println("every day of the week they make" + " " + Adjective1 + " " + "for breakfest and" + " " + Verb2 + " " + "at" + " " + Place1 + " " + "with" + " " + Person2);
+        System.out.println("somethimes, they go to the" + " " + Adjective2 + " " + Place2 + " " + "with" + " " + Person2 + " " + "so that they can" + " " + Verb3 + " " + "togehter");
+    
+        
+        
+        
+
+    
     }
 }
