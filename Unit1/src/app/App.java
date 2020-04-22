@@ -2,6 +2,7 @@ package app;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        System.out.println("start first loop");
         for (int i = 20; i >= 1; i--) {
             if (i == 10) {
                 int x = 1; 
