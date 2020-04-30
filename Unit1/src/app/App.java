@@ -5,16 +5,11 @@ public class App {
     public static void main(String[] args) throws Exception {
 
         Scanner input = new Scanner(System.in);
+        System.out.println("what is the count");
+        int count = input.nextInt();
 
-        System.out.println("please enter your password");
-            String password = input.nextLine();
-        {
-            if (password.equals("183726073"))
-            {System.out.println("Access Granted");
-            
-            } else 
-            {System.out.println("Access Denied"); }
-
+        for (int x = 1; x <= count; x++) {
+            System.out.println(x);
         }
         
     
