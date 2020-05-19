@@ -14,16 +14,25 @@ public class App {
       dog1.name = "Cyrus";
       dog1.age = 3;
       dog1.breed = "German Shepard";
+      dog1.haircolor = "brown";
+      dog1.tailsize = "long";
+      dog1.eyecolor = "brown";
       dog2.name = "Abby";
       dog2.age = 5;
       dog2.breed = "Siberian husky";
+      dog2.haircolor = "blonde";
+      dog2.tailsize = "short";
+      dog2.eyecolor = "green";
       dog3.name = "Zoey";
       dog3.age = 1;
       dog3.breed = "Cane Corso";
+      dog3.haircolor = "white";
+      dog3.tailsize = "medium";
+      dog3.eyecolor = "blue";
 
-      System.out.println("the first dogs name is " + dog1.name + " the dogs age is " + dog1.age + " the dogs breed is " + dog1.breed);
-      System.out.println("the seconds dog name is "+ dog2.name + " the dogs age is " + dog2.age + " the dogs breed is " + dog2.breed);
-      System.out.println("the third dogs name is " + dog3.name + " the dogs age is " + dog3.age + " the dogs breed is " + dog3.breed);
+      System.out.println("the first dogs name is " + dog1.name + " the dogs age is " + dog1.age + " the dogs breed is " + dog1.breed + " the dogs hair color is " + dog1.haircolor + " the dogs tail lengt is " + dog1.tailsize + " and the color of the dogs eyeys is " + dog1.eyecolor);
+      System.out.println("the seconds dog name is "+ dog2.name + " the dogs age is " + dog2.age + " the dogs breed is " + dog2.breed + " the dogs hair color is " + dog2.haircolor + " the dogs tail lengt is " + dog2.tailsize + " and the color of the dogs eyeys is " + dog2.eyecolor);
+      System.out.println("the third dogs name is " + dog3.name + " the dogs age is " + dog3.age + " the dogs breed is " + dog3.breed + " the dogs hair color is " + dog3.haircolor + " the dogs tail lengt is " + dog3.tailsize + " and the color of the dogs eyeys is " + dog3.eyecolor);
       
       
      
