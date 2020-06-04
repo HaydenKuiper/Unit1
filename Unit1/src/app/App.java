@@ -4,44 +4,71 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        Scanner input = new Scanner(System.in);
+        Account account1 = new Account();
 
-      Dog dog1 = new Dog();
-      Dog dog2 = new Dog();
-      Dog dog3 = new Dog();
+        System.out.println("what is your name");
+        account1.name = input.nextLine();
 
-      Scanner input = new Scanner(System.in);
-      
-      dog1.name = "Cyrus";
-      dog1.age = 3;
-      dog1.breed = "German Shepard";
-      dog1.haircolor = "brown";
-      dog1.tailsize = "long";
-      dog1.eyecolor = "brown";
-      dog2.name = "Abby";
-      dog2.age = 5;
-      dog2.breed = "Siberian husky";
-      dog2.haircolor = "blonde";
-      dog2.tailsize = "short";
-      dog2.eyecolor = "green";
-      dog3.name = "Zoey";
-      dog3.age = 1;
-      dog3.breed = "Cane Corso";
-      dog3.haircolor = "white";
-      dog3.tailsize = "medium";
-      dog3.eyecolor = "blue";
+        System.out.println("what is your starting balance");
+        account1.startingbalance = input.nextInt();
 
-      System.out.println("the first dogs name is " + dog1.name + " the dogs age is " + dog1.age + " the dogs breed is " + dog1.breed + " the dogs hair color is " + dog1.haircolor + " the dogs tail lengt is " + dog1.tailsize + " and the color of the dogs eyeys is " + dog1.eyecolor);
-      System.out.println("the seconds dog name is "+ dog2.name + " the dogs age is " + dog2.age + " the dogs breed is " + dog2.breed + " the dogs hair color is " + dog2.haircolor + " the dogs tail lengt is " + dog2.tailsize + " and the color of the dogs eyeys is " + dog2.eyecolor);
-      System.out.println("the third dogs name is " + dog3.name + " the dogs age is " + dog3.age + " the dogs breed is " + dog3.breed + " the dogs hair color is " + dog3.haircolor + " the dogs tail lengt is " + dog3.tailsize + " and the color of the dogs eyeys is " + dog3.eyecolor);
-      
-      
-     
+        System.out.println("please enter a numbered password");
+        account1.password = input.nextInt();
 
+        System.out.println("account created, please log in.");
 
+        System.out.println("what is your name");
+        input.nextLine();
+        String nameReal = input.nextLine();
 
+        if (nameReal.equals(account1.name)) {
+            System.out.println("enter your passcode");
+            int passcodeReal = input.nextInt();
 
-
-    
-    
+            if (passcodeReal == account1.password) {
+                System.out.println("Access granted, welcome " + account1.name + ".");
+                System.out.println(
+                        "what would you like to do? check your balance by pressing 1, withdraw money by pressing 2, change password by pressing 3, or you can exit by pressing 4");
+                account1.operator = input.nextInt();
+                while (account1.operator <= 3){
+                    if (account1.operator == 1) {
+                        System.out.println("you have $" + account1.startingbalance + " in your account.");
+                        System.out.println(
+                                "what would you like to do? check your balance by pressing 1, wihdraw money by pressing 2, change passcode by pressing 3, or you can exit by pressing 4.");
+                        account1.operator = input.nextInt();
+                    }
+                if (account1.operator == 2){
+                    System.out.println("enter amount you want to subtract.");
+                    int withdrawl = input.nextInt();
+                    System.out.println("your balance is $" + (account1.startingbalance - withdrawl));
+                    System.out.println("what would you like to do? check your balance by pressing 1, wihdraw money by pressing 2, change passcode by pressing 3, or you can exit by pressing 4.");
+                    account1.operator = input.nextInt();
+                }
+                if (account1.operator == 3) {
+                    System.out.println("what passcode do you want?");
+                    account1.password = input.nextInt();
+                    System.out.println("passcode changed, please reenter passcode");
+                    int passcode = input.nextInt();
+                    if (passcode == account1.password) {
+                        System.out.println("passcode changed");
+                        System.out.println("what would you like to do? check your balance by pressing 1, wihdraw money by pressing 2, change passcode by pressing 3, or you can exit by pressing 4.");
+                        account1.operator = input.nextInt();
+                    }else {
+                        System.out.println("access denied");
+                    }
+                if (account1.operator == 4) {
+                        System.out.println("thankyou and have a nice day!");
+                    }
+                }
+             }
+        
+        
+        
+        }else {System.out.println("Access denied");
+            }
+             
     }
 }
+}
+
